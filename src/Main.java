@@ -24,7 +24,7 @@ public class Main {
 
     public static void main(String[] args) {
         Task task1 = new Task(1, "Homework", "Pending");
-        Task task2 = new Task(2, "Housework", "Completed");
+        Task task2 = new Task(2, "Churchwork", "Completed");
         tasks.add(task1);
         tasks.add(task2);
 
