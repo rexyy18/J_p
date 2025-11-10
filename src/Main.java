@@ -23,11 +23,6 @@ public class Main {
     static int nextId = 1;
 
     public static void main(String[] args) {
-        Task task1 = new Task(1, "Homework", "Pending");
-        Task task2 = new Task(2, "Churchwork", "Completed");
-        tasks.add(task1);
-        tasks.add(task2);
-
         boolean running = true;
 
         while (running) {
@@ -69,10 +64,10 @@ public class Main {
         System.out.print("Enter task title: ");
         String title = scanner.nextLine();
 
-        Task newTask = new Task(nextId, title, "pending");
+        Task newTask = new Task(nextId ++, title, "pending");
         tasks.add(newTask);
 
-        System.out.println("✓ Task created with ID: " + nextId);
+        System.out.println("✓ Task created with ID: " + nextId++);
         nextId++;
     }
     static void listTasks() {
